@@ -1,7 +1,7 @@
-##Bank branches API Service
+#Bank branches API Service
 i put together this REST API to serve up data for about 120,000 bank branches in India. i used Python, Flask and SQLite to build it.
 
-##how it works:
+#how it works:
 this project is basically a bridge between a raw data file and the user who needs the info.
 
 loading data: when you start the app, it reads a big CSV file that has all the raw banking data.
@@ -10,7 +10,7 @@ building the db: it converts that text data into a structured SQL database. i di
 
 serving requests: the Flask server listens for web requests. if you ask for details about a specific branch, it queries the database and sends back the result as JSON.
 
-##the approach:
+#the approach:
 my goal was to code clean and keep the logic simple:
 
 data normalization: the raw data had a lot of repetition, so i split it into two tables: banks and branches. this keeps the architecture clean and avoids duplicate text.
